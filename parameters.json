@@ -1,0 +1,59 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+
+    "adminUsername": {
+      "value": "localadmin"
+    },
+
+    "vmName": {
+      "value": "VM1"
+    },
+
+    "vmSize": {
+      "value": "Standard_B2s"
+    },
+
+    "imagePublisher": {
+      "value": "MicrosoftWindowsServer"
+    },
+
+    "imageOffer": {
+      "value": "WindowsServer"
+    },
+
+    "imageSKU": {
+      "value": "2025-datacenter-g2"
+    },
+
+    "virtualNetworkName": {
+      "value": "Vnet1"
+    },
+
+    "addressPrefix": {
+      "value": "10.10.0.0/16"
+    },
+
+    "subnetName": {
+      "value": "Subnet1"
+    },
+
+    "subnetPrefix": {
+      "value": "10.10.1.0/24"
+    },
+
+    "nsgName": {
+      "value": "NSG1"
+    },
+
+    "publicIpName": {
+      "value": "PublicIP1"
+    },
+
+    "nicName": {
+      "value": "NIC1"
+    }
+
+  }
+}
