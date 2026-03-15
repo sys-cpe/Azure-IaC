@@ -3,48 +3,20 @@
   "contentVersion": "1.0.0.0",
 
   "parameters": {
-    "adminUsername": {
-      "type": "string"
-    },
-    "adminPassword": {
-      "type": "secureString"
-    },
-    "vmName": {
-      "type": "string"
-    },
-    "vmSize": {
-      "type": "string"
-    },
-    "imagePublisher": {
-      "type": "string"
-    },
-    "imageOffer": {
-      "type": "string"
-    },
-    "imageSKU": {
-      "type": "string"
-    },
-    "virtualNetworkName": {
-      "type": "string"
-    },
-    "addressPrefix": {
-      "type": "string"
-    },
-    "subnetName": {
-      "type": "string"
-    },
-    "subnetPrefix": {
-      "type": "string"
-    },
-    "nsgName": {
-      "type": "string"
-    },
-    "publicIpName": {
-      "type": "string"
-    },
-    "nicName": {
-      "type": "string"
-    }
+    "adminUsername": { "type": "string" },
+    "adminPassword": { "type": "secureString" },
+    "vmName": { "type": "string" },
+    "vmSize": { "type": "string" },
+    "imagePublisher": { "type": "string" },
+    "imageOffer": { "type": "string" },
+    "imageSKU": { "type": "string" },
+    "virtualNetworkName": { "type": "string" },
+    "addressPrefix": { "type": "string" },
+    "subnetName": { "type": "string" },
+    "subnetPrefix": { "type": "string" },
+    "nsgName": { "type": "string" },
+    "publicIpName": { "type": "string" },
+    "nicName": { "type": "string" }
   },
 
   "variables": {
@@ -84,9 +56,7 @@
       "location": "[variables('location')]",
       "properties": {
         "addressSpace": {
-          "addressPrefixes": [
-            "[parameters('addressPrefix')]"
-          ]
+          "addressPrefixes": ["[parameters('addressPrefix')]"]
         },
         "subnets": [
           {
